@@ -25,7 +25,18 @@ const jokes = {
         "Lil Petey:  Frog poo",
         "Lil Petey:  Poo-poo",
         "Lil Petey:  Wee-wee"
-    ]
+    ],
+
+    createJoke() {
+        let a = this.lilPeteyQ[Math.floor(Math.random() * 6)];
+        let b = this.peteyQ[Math.floor(Math.random() * 6)];
+        let c = this.lilPeteyA[Math.floor(Math.random() * 6)];
+        //return `Q: ${a} R: ${b} A: ${c}.` 
+        return a + '\n' + b + '\n' + c 
+    }
 };
 
-console.log(jokes.lilPeteyA[0])
+
+console.log(jokes.createJoke())
+
+
